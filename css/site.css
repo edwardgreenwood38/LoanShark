@@ -59,7 +59,13 @@ code[class*="language-"], pre[class*="language-"] {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
-    }
+}
+
+.tableHeader {
+    background-color: #1d5888;
+    color: white;
+    font-weight: bold;
+}
 
 
 main>.container {

@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="col-12 mt-1 mb-1 d-flex justify-content-end">
-                            <button type="button" class="btn btn-md btn-outline-primary">Calculate</button>
+                            <button type="button" class="btn btn-md btn-outline-primary" id="btnCalculate">Calculate</button>
                         </div>
                     </form>
                 </div>
@@ -88,7 +88,7 @@
                                 <h3 class="text-dark fst-italic">Your Monthly Payments</h3>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <h1 id="monthlyPayment" class="text-dark fs-1 pt-4 pb-3">$230</h1>
+                                <h1 id="monthlyPayment" class="text-dark fs-1 pt-4 pb-3"></h1>
                             </div>
                         </div>
                         <div class="col-6">
@@ -174,6 +174,10 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
     <script src="/js/site.js"></script>
+
+    <script>
+        document.getElementById("btnCalculate").addEventListener("click", getValues);
+    </script>
 </body>
 
 </html>
